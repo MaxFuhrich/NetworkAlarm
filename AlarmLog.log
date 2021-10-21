@@ -1,8 +1,10 @@
-Okt. 07, 2021 5:21:39 PM Monitor <init>
-INFO: Logger started
-Okt. 07, 2021 5:21:39 PM Monitor checkConnections
-INFO: name:eth1 (Realtek Gaming 2.5GbE Family Controller)
-Okt. 07, 2021 5:21:44 PM Monitor checkConnections
-INFO: name:eth1 (Realtek Gaming 2.5GbE Family Controller)
-Okt. 07, 2021 5:21:49 PM Monitor checkConnections
-INFO: name:eth1 (Realtek Gaming 2.5GbE Family Controller)
+Okt. 21, 2021 10:13:44 AM Monitor <init>
+INFORMATION: Logger started
+Okt. 21, 2021 10:13:44 AM Monitor checkConnections
+INFORMATION: name:wlan1 (Qualcomm Atheros QCA9377 Wireless Network Adapter)
+Okt. 21, 2021 10:13:44 AM Monitor checkConnections
+INFORMATION: name:eth15 (Hyper-V Virtual Ethernet Adapter)
+Okt. 21, 2021 10:13:49 AM Monitor checkConnections
+INFORMATION: name:wlan1 (Qualcomm Atheros QCA9377 Wireless Network Adapter)
+Okt. 21, 2021 10:13:50 AM Monitor checkConnections
+INFORMATION: name:eth15 (Hyper-V Virtual Ethernet Adapter)
