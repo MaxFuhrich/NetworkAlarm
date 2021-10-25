@@ -18,16 +18,12 @@ public class Monitor extends Thread{
         this.display = display;
         logger = Logger.getLogger("AlarmLogger");
         try {
-            Enumeration<NetworkInterface> nis = NetworkInterface.getNetworkInterfaces();
-            networkList = Collections.list(nis);
             FileHandler fh = new FileHandler("AlarmLog.log");
             logger.addHandler(fh);
             SimpleFormatter formatter = new SimpleFormatter();
             fh.setFormatter(formatter);
             logger.info("Logger started");
-        } catch (SecurityException e) {
-            e.printStackTrace();
-        }  catch (IOException e) {
+        } catch (SecurityException | IOException e) {
             e.printStackTrace();
         }
     }
@@ -35,6 +31,8 @@ public class Monitor extends Thread{
     private void checkConnections(){
         boolean detected = false;
         try {
+            Enumeration<NetworkInterface> nis = NetworkInterface.getNetworkInterfaces();
+            networkList = Collections.list(nis);
             for (NetworkInterface ni : networkList) {
                 if (ni.isUp() && !ni.isLoopback()){
                     logger.info(ni.toString());
